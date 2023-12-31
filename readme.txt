@@ -1,6 +1,6 @@
 README
 
-chessv2: throws error in some edge cases(pawns reaching the edge and not promoting)
+chessv2: throws error in some edge cases(pawns sometimes reaching the edge and not promoting)
 	-fix edge cases
 	-redifine class for const correctness and memory management
 
