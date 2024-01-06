@@ -13,7 +13,7 @@ Move::Move(int a, int b, int c, int d) :x1(a),x2(c),y2(d),allowed(true)
     }
 }
 
-Move::Move(string temp) {
+Move::Move(const string& temp) {
     coords = temp;
     allowed = true;
     if (coords == "O-O") {
@@ -49,5 +49,6 @@ Move& Move::operator=(const Move& other) {
     x2 = other.x2;
     y1 = other.y1;
     y2 = other.y2;
+    coords = other.coords;
     return *this;
 }

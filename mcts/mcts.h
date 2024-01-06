@@ -6,6 +6,7 @@
 #include<vector>
 #include <cstdlib>
 #include <ctime>
+#include<memory>
 
 class MCTS {
 public:

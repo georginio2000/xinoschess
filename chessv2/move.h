@@ -8,7 +8,7 @@ using namespace std;
 class Move {
 public:
     Move(int, int, int, int);
-    Move(string);
+    Move(const string&);
     Move& operator=(const Move&);
 public:
     int x1, y1, x2, y2;

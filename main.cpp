@@ -1,13 +1,14 @@
 #include "chessv2/game.h"
-#include "chessv2/move.h"
 #include "chessv2/utilities.h"
-#include<windows.h>
 #include"cnn/Cnn.h"
 #include"mcts/mcts.h"
-#include"mcts/node.h"
+#include<ctime>
+
 
 //INITIALISE PARAMETERS
 bool TESTING = true;
+bool MONTE_CARLO = true;
+
 
 void movetree(Game game, int d) {
     vector<Game> movetree;
@@ -45,15 +46,20 @@ void movetree(Game game, int d) {
 }
 
 int main() {
+    time_t now = std::time(nullptr);
+    tm* localTime = std::localtime(&now);
+
     util::init_piece_to_double();
     //Game game("3rk3/8/8/8/8/8/8/1Q1RK3 w ----  -" );
     Game* game = new Game;
+    cout << game->getmovenum();
     game->updatepossiblemoves();
     string input;
     util::board_to_bitmaps(game->skakiera);
+
+
     if (!TESTING) {
-        
-        //*****proper*****
+        //*****proper game*****
         while (input != "end") {
             game->draw();
             for (auto& element : game->currentpossiblemoves) {
@@ -88,18 +94,24 @@ int main() {
         }
     }
     //**********for testing purposes*********
+    else if(!MONTE_CARLO){
+        Move random_move = game->choose_random_move();
+        Game temp = *game;
+        while (random_move.coords != "pain" && temp.ended() == 2) {
+            temp = *temp.play(random_move);
+            random_move = temp.choose_random_move();
+           // cout << random_move.coords;
+        }
+        for (int i = 0; i < temp.movelog.size(); ++i)cout << temp.movelog[i].coords;
+        cout << '\n';
+        game->draw();
+        temp.draw();
+        cout << "exited";
+    }
     else {
-        MCTS tree(game, 5, 500);
-        tree.run();
-        tree.print();
+        srand(time(NULL));
+        MCTS test(game, 10, 10);
+        test.run();
+        test.print();
     }
 }
-
-/*
-    TODO:
-    MOVETREE doneeeeeeeeeeeeeee magkasssssss
-    stalemate done magkasssssss
-    eaten pieces on the side of the board
-    check beginning positions
-    
-*/

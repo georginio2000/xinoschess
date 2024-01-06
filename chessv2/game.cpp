@@ -62,7 +62,31 @@ Game::Game(string position , int a, int b) {
     movelog.push_back(Move(-1, -1, -1, -1));
 }
 
-void Game::draw() {
+Game::Game(const Game& other) : movenum(other.movenum), fullmovenum(other.fullmovenum), currentenpassant(other.currentenpassant) {
+    // Copy the skakiera (chessboard)
+    for (int i = 0; i < 8; ++i) {
+        for (int j = 0; j < 8; ++j) {
+            skakiera[i][j] = other.skakiera[i][j];
+        }
+    }
+
+    // Copy the vectors
+    whitepieces = other.whitepieces;
+    blackpieces = other.blackpieces;
+    currentpossiblemoves = other.currentpossiblemoves;
+    currentblackmoves = other.currentblackmoves;
+    currentwhitemoves = other.currentwhitemoves;
+    movelog = other.movelog;
+
+    // Copy the castling rights
+    K = other.K;
+    Q = other.Q;
+    k = other.k;
+    q = other.q;
+}
+
+
+void Game::draw() const {
     for (int i = 7; i >=0; --i) {
          cout << i+1 << " ";
          for (int j = 0; j < 8; ++j) {
@@ -78,10 +102,7 @@ void Game::draw() {
     cout << '\n';
 }
 
-
-
-
-int Game::lastmovedoublepush() {
+int Game::lastmovedoublepush() const {
     int a = movelog[getmovenum()].x1;
     int b = movelog[getmovenum()].y1;
     int c = movelog[getmovenum()].x2;
@@ -94,9 +115,6 @@ int Game::lastmovedoublepush() {
     }
     return -2;
 }
-
-
-
 
 bool Game::check_check(int temp) {
     if (getmovenum() % 2 == 0) {
@@ -114,14 +132,11 @@ bool Game::check_check(int temp) {
     return false;
 }
 
-
-
-bool Game::simulatemove(Move &move) {
+bool Game::simulatemove(const Move &move) {
     bool allowed;
     char temp1 = skakiera[move.x1][move.y1];
     char temp2 = skakiera[move.x2][move.y2];
-    
-    skakiera[move.x2][move.y2] = skakiera[move.x1][move.y1];
+    skakiera[move.x2][move.y2] = temp1;
     skakiera[move.x1][move.y1] = ' ';
     int counter = -1;
 
@@ -160,7 +175,7 @@ bool Game::simulatemove(Move &move) {
         allowed = true; 
     }
 
-    skakiera[move.x1][move.y1] = skakiera[move.x2][move.y2];
+    skakiera[move.x1][move.y1] = temp1;
     skakiera[move.x2][move.y2] = temp2;
 
     if (getmovenum() % 2 == 0) {
@@ -182,15 +197,13 @@ bool Game::simulatemove(Move &move) {
     return allowed;
 }
 
-
-
-
 void Game::updatepossiblemoves() {
     currentpossiblemoves.clear();
     if (movenum % 2 == 0) { //check moves for white
         if (K==0) currentpossiblemoves.push_back(Move("O-O"));//king side castling
         if (Q==0) currentpossiblemoves.push_back(Move("O--O"));//queen side castling
         for (int i = 0; i < whitepieces.size(); ++i) {
+          //  cout<<"value: "<< whitepieces[i].value << " x: " << whitepieces[i].x << " y: " << whitepieces[i].y << " ingame: " << whitepieces[i].ingame << "\n";
             if (whitepieces[i].ingame)whitepieces[i].possiblemoves(currentpossiblemoves, skakiera, currentenpassant);
         }
     }
@@ -198,6 +211,7 @@ void Game::updatepossiblemoves() {
         if (k==0) currentpossiblemoves.push_back(Move("o-o"));
         if (q==0) currentpossiblemoves.push_back(Move("o--o"));
         for (int i = 0; i < blackpieces.size(); ++i) {
+            //cout << "value: " << blackpieces[i].value << " x: " << blackpieces[i].x << " y: " << blackpieces[i].y <<" ingame: "<<blackpieces[i].ingame << "\n";
             if (blackpieces[i].ingame)blackpieces[i].possiblemoves(currentpossiblemoves, skakiera, currentenpassant);
         }
     }
@@ -210,9 +224,6 @@ void Game::updatepossiblemoves() {
       
 }
 
-
-
-
 void Game::updateblackmoves(int a) {
     currentblackmoves.clear();
     for (int i = 0; i < blackpieces.size(); ++i) {
@@ -220,15 +231,12 @@ void Game::updateblackmoves(int a) {
     }
 }
 
-
-
 void Game::updatewhitemoves(int a) {
     currentwhitemoves.clear();
     for (int i = 0; i < whitepieces.size(); ++i) {
         if(whitepieces[i].ingame && i != a)whitepieces[i].possiblemoves(currentwhitemoves, skakiera, currentenpassant);
     }
 }
-
 
 void Game::updatecastlingbools() {
     if (getmovenum() % 2 == 0) {
@@ -283,7 +291,7 @@ void Game::updatecastlingbools() {
     }
 }
 
-void Game::receivemove(string move) {
+void Game::receivemove(string& move) {
     bool flag=false;
     if (move == "end") {
         return;
@@ -305,10 +313,7 @@ void Game::receivemove(string move) {
 
 }
 
-
-
-
-void Game::change(Move &move) {
+void Game::change(const Move &move) {
     //TAKING AWAY CATSLING RIGHTS OF WHITE
     if (move.x1 == 0 && move.y1 == 0 || move.x2 == 0 && move.y2 == 0) Q = 2;
     if (move.x1 == 7 && move.y1 == 0 || move.x2 == 7 && move.y2 == 0) K = 2;
@@ -321,10 +326,10 @@ void Game::change(Move &move) {
     char temp = skakiera[move.x2][move.y2];
     skakiera[move.x2][move.y2] = skakiera[move.x1][move.y1];
     skakiera[move.x1][move.y1] = ' ';
-    assert(temp != 'K');
+
     if (getmovenum() % 2 == 0) {
         for (auto& element : whitepieces) {
-            if (element.x == move.x1 && element.y == move.y1) {
+            if (element.ingame && element.x == move.x1 && element.y == move.y1) {
                 element.x = move.x2;
                 element.y = move.y2;
                 //special pawn cases (promotion en passant)
@@ -333,16 +338,15 @@ void Game::change(Move &move) {
                        // cout << "Promote to: ";
                         char t = 'Q';    ////////////////////////////////
                         element.promote(t);
-                        cout << element.value;
+                       // cout << element.value;
                         skakiera[move.x2][move.y2] = element.value;
                     }
                     else if (move.coords[1] == 'x') {
                         for (auto& element : blackpieces) {
                             if (element.x == currentenpassant && element.y == 4) {
                                 skakiera[element.x][element.y] = ' ';
-                                element.ingame = false;
-                                element.x = -1;
-                                element.y = -1;
+                                element.ingame = false;///////////////////////////
+                                element.value = 'x';
                                 break;
                             }
                         }
@@ -352,9 +356,10 @@ void Game::change(Move &move) {
         }
         if (temp != ' ') {
            for (auto& element : blackpieces) {
-               if (element.x == move.x2 && element.y == move.y2) {
+               if (element.ingame && element.x == move.x2 && element.y == move.y2) {
                     //blackpieces.erase(blackpieces.begin()+counter);
                     element.ingame = false;
+                    element.value = 'x';
                     break;
                }
            }
@@ -362,7 +367,7 @@ void Game::change(Move &move) {
     }
     else {
         for (auto& element : blackpieces) {
-            if (element.x == move.x1 && element.y == move.y1) {
+            if (element.ingame && element.x == move.x1 && element.y == move.y1) {
                 element.x = move.x2;
                 element.y = move.y2;
                 if (element.value == 'p') {
@@ -377,8 +382,7 @@ void Game::change(Move &move) {
                             if (element.x == currentenpassant && element.y == 3) {
                                 element.ingame = false;
                                 skakiera[element.x][element.y] = ' ';
-                                element.x = -1;
-                                element.y = -1;
+                                element.value = 'x';
                                 break;
                             }
                         }
@@ -388,8 +392,9 @@ void Game::change(Move &move) {
         }
         if (temp != ' ') {
             for (auto& element : whitepieces) {
-                if (element.x == move.x2 && element.y == move.y2) {
+                if (element.ingame && element.x == move.x2 && element.y == move.y2) {
                     element.ingame=false;
+                    element.value = 'x';
                     break;
                 }
             }
@@ -417,29 +422,35 @@ void Game::change(Move &move) {
     movelog.push_back(move);
 }
 
-
-
-
-Piece Game::getwhiteking() {
+Piece Game::getwhiteking() const{
     for (auto& element : whitepieces) {
         if (element.gettype() == 'k') return element;
     }
 }
 
-Piece Game::getblackking() {
+Piece Game::getblackking() const{
     for (auto& element : blackpieces) {
         if (element.gettype() == 'k') return element;
     }
 }
-;
-int Game::getmovenum() { return movenum; }
 
-void Game::incrmovenum() { movenum++; }
+int Game::getmovenum() const{ 
+    return movenum; 
+}
 
-Game* Game::play(Move& m) {
-    mygameassert(m.x2 < 8 && m.y2 < 8);
-    Game* temp = new Game(*this);
+void Game::incrmovenum() {
+    movenum++; 
+}
+
+
+
+Game* Game::play(const Move& m) {
+    mygameassert(m.x2 < 8 && m.y2 < 8, m.coords);
+
+    Game *temp =new Game(*this);
+
     temp->change(m);
+
     temp->incrmovenum();
     temp->currentenpassant = lastmovedoublepush();
     temp->updatecastlingbools();
@@ -464,24 +475,21 @@ int Game::ended() {
     return 2;
 }
 
-
-
-Move Game::choose_random_move() {
+Move Game::choose_random_move() const{
     vector<Move> temp;
     for (int i = 0; i < currentpossiblemoves.size(); ++i) if (currentpossiblemoves[i].allowed)temp.push_back(currentpossiblemoves[i]);
     if (temp.size() == 0) return Move("pain");
     return temp[rand() % temp.size()];
 }
 
-
-void Game::mygameassert(bool expr) {
+void Game::mygameassert(bool expr,string message) const{
     if (!expr) {
         draw();
         cout << '\n';
         for (int i = 0; i < movelog.size(); ++i) {
             cout << movelog[i].coords << ' '  << movelog[i].allowed;
         }
-        cerr << "mygameassert called";
+        cerr << "mygameassert called "<<message;
         abort();
     }
 }

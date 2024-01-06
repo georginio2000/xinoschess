@@ -5,6 +5,6 @@
     "\\cnn",
     "\\mcts"
   ],
-  "SelectedNode": "\\chessv2\\game.cpp",
+  "SelectedNode": "\\mcts\\mcts.cpp",
   "PreviewInSolutionExplorer": false
 }
