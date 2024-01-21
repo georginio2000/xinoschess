@@ -2,6 +2,7 @@
 #include<iostream>
 #include<vector>
 #include"kernel.h"
+#include<cmath>
 #include"neuron.h"
 #include"../chessv2/utilities.h"
 #include"../chessv2/utilities.h"
@@ -10,7 +11,7 @@ class Cnn {
 public:
 	Cnn(vector<vector<int>> widths, vector<vector<int>> heights, vector<int> fcn);
 	
-	double eval(); //returns the evalutaion for the position double € [-1,1]
+	double eval(); //returns the evalutaion for the position double ï¿½ [-1,1]
 	void receive_input(char(&board)[8][8],int turn);
 
 private:

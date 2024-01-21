@@ -4,6 +4,7 @@
 #include<string>
 #include "piece.h"
 #include "move.h"
+#include<cmath>
 #include"utilities.h"
 #include <cstdlib>
 #include <ctime>

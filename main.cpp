@@ -1,13 +1,12 @@
 #include "chessv2/game.h"
 #include "chessv2/move.h"
 #include "chessv2/utilities.h"
-#include<windows.h>
-#include"cnn/Cnn.h"
+#include"cnn/cnn.h"
 #include"mcts/mcts.h"
 #include"mcts/node.h"
 
 //INITIALISE PARAMETERS
-bool TESTING = true;
+bool TESTING = false;
 
 void movetree(Game game, int d) {
     vector<Game> movetree;

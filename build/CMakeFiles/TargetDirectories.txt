@@ -1,0 +1,3 @@
+/home/gkous/Desktop/xinoschess/build/CMakeFiles/xinoschess.dir
+/home/gkous/Desktop/xinoschess/build/CMakeFiles/edit_cache.dir
+/home/gkous/Desktop/xinoschess/build/CMakeFiles/rebuild_cache.dir
