@@ -4,6 +4,9 @@
 #include<vector>
 #include<unordered_map>
 #include<assert.h>
+#include<windows.h>
+#include <psapi.h>
+#include<fstream>
 
 namespace util {
     extern unordered_map<char, double> piece_to_double;
@@ -15,12 +18,10 @@ namespace util {
         else return false;
     }
 
-
     inline int numberise(char x) {//char to int, ie '9' to 9 
         if (isnumber(x)) return x - 48;
         else return -1;
     }
-
 
     string numstocoords(int x1, int y1, int x2, int y2);
 
@@ -28,4 +29,16 @@ namespace util {
 
     vector<double> serialize(vector<vector<double>>& in);
 
+    class Logger {
+    public:
+        static Logger& getInstance();
+
+        void logMessage(const std::string& message);
+
+    private:
+        Logger() : logStream(std::ofstream("C:/Users/gkous/source/repos/xinoschess/logfile.txt")) {}
+        std::ofstream logStream;
+    };
+
+    size_t getCurrentMemoryUsageKB();
 }

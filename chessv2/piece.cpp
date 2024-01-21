@@ -8,11 +8,10 @@ Piece::Piece(char a, int c, int d) {
     ingame = true;
 }
 
-void Piece::movepiece(Move move) {
+void Piece::movepiece(const Move& move) {
     x = move.x2;
     y = move.y2;
 }
-
 
 void Piece::promote(char newtype) {
     if (getcolour() != 0) {
@@ -33,16 +32,16 @@ void Piece::promote(char newtype) {
     }
 }
 
-int Piece::getcolour() {
+int Piece::getcolour() const{
     return isupper(value);
 }
 
-char Piece::gettype() {
+char Piece::gettype() const {
     if (isupper(value)) return value+32;
     else return value;
 }
 
-void  Piece::getdiagonalmoves(vector<Move> &movelist, char board[8][8]) {
+void  Piece::getdiagonalmoves(vector<Move> &movelist,const char(&board)[8][8]) const {
     for (int i = 1; x + i < 8 && y+i<8; ++i) {
         if (board[x + i][y + i] == ' ') {
             movelist.push_back(Move(x, y, x + i, y + i));
@@ -84,7 +83,8 @@ void  Piece::getdiagonalmoves(vector<Move> &movelist, char board[8][8]) {
         else break;
     }
 }
-void  Piece::gethorizontalmoves(vector<Move>& movelist, char board[8][8]) {
+
+void  Piece::gethorizontalmoves(vector<Move>& movelist, const char(&board)[8][8]) const {
 
     for (int i = 1; x + i < 8; ++i) {
         if (board[x + i][y] == ' ') {
@@ -131,8 +131,7 @@ void  Piece::gethorizontalmoves(vector<Move>& movelist, char board[8][8]) {
     }
 }
 
-
-void Piece::possiblemoves(vector<Move>& movelist, char board[8][8], int dp) {
+void Piece::possiblemoves(vector<Move>& movelist, const char(&board)[8][8], int dp) const{
     switch (gettype()) {
         case 'k':
             for (int i = -1; i < 2; ++i) {
@@ -174,12 +173,9 @@ void Piece::possiblemoves(vector<Move>& movelist, char board[8][8], int dp) {
             }
             break;
         case 'p':
-            
             if (y == 0 || y == 7) {
-                cout << y << board[x][y]<<gettype() << "\n";
-                
+                cout <<"x,y" << x << y << board[x][y] << gettype() << "\n"; 
             }
-            
             if(getcolour()){
                 if (x == 0) {
                     if(board[x + 1][y + 1] !=' '&& getcolour() != isupper(board[x + 1][y + 1])) movelist.push_back(Move(x, y, x + 1, y + 1));
@@ -188,7 +184,7 @@ void Piece::possiblemoves(vector<Move>& movelist, char board[8][8], int dp) {
                     if (board[x - 1][y + 1] != ' ' && getcolour() != isupper(board[x - 1][y + 1])) movelist.push_back(Move(x, y, x - 1, y + 1));
                 }
                 else {
-                   // mypieceassert(x < 8 && y < 8, board);
+                 //   mypieceassert(x < 8 && y < 8, board,"188");
                     if (board[x + 1][y + 1] != ' ' && getcolour() != isupper(board[x + 1][y + 1])) {
                         movelist.push_back(Move(x, y, x + 1, y + 1)); 
                     }
@@ -212,7 +208,7 @@ void Piece::possiblemoves(vector<Move>& movelist, char board[8][8], int dp) {
                     if (board[x - 1][y - 1] != ' ' && getcolour() != isupper(board[x - 1][y - 1])) movelist.push_back(Move(x, y, x - 1, y - 1));
                 }
                 else {
-                   // mypieceassert(x > 0 && y > 0, board);
+                //    mypieceassert(y > 0, board,to_string(y));
                     if (board[x + 1][y - 1] != ' ' && getcolour() != isupper(board[x + 1][y - 1])) movelist.push_back(Move(x, y, x + 1, y - 1));
                     if (board[x - 1][y - 1] != ' ' && getcolour() != isupper(board[x - 1][y - 1])) movelist.push_back(Move(x, y, x - 1, y - 1));
                 }
@@ -230,8 +226,7 @@ void Piece::possiblemoves(vector<Move>& movelist, char board[8][8], int dp) {
     }
 }
 
-
-void Piece::mypieceassert(bool expr, char board[8][8]) {
+void Piece::mypieceassert(bool expr, const char(&board)[8][8],string message) const {
     if (!expr) {
         for (int i = 7; i >= 0; --i) {
             cout << i + 1 << " ";
@@ -247,7 +242,7 @@ void Piece::mypieceassert(bool expr, char board[8][8]) {
         }
         cout << '\n';
 
-        cerr << "mypieceassert called";
+        cerr << "mypieceassert called"<<message;
         abort();
     }
 }

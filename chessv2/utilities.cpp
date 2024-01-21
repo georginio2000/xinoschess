@@ -12,10 +12,10 @@ namespace util {
         return result;
     }
 
-
     //turn board to value board ready for Cnn
     //P=1,K=10, Q=9, R=5, B=4, N=3
     unordered_map<char, double> piece_to_double;
+
     void init_piece_to_double() {
         piece_to_double.insert({ 'p',-1.0 });
         piece_to_double.insert({ 'P', 1.0 });
@@ -36,7 +36,6 @@ namespace util {
     //px uint64_t pawn = 0*8 1*8 6*8*0 0000000011111111000000000000000000000000000000000000000000000000
     //ta mavra pionia sthn arxikh thesh
     //me th seira: rnbqkpPRNBQK
-
 
     vector<uint64_t> board_to_bitmaps(char(&board)[8][8]) {
         vector<uint64_t> result;
@@ -64,9 +63,6 @@ namespace util {
         return result;
     }
 
-
-
-
     vector<double> serialize(vector<vector<double>>& in) {
         vector<double> result;
         for (int i = 0; i < in.size(); ++i) {
@@ -77,4 +73,18 @@ namespace util {
         return result;
     }
 
+    Logger& Logger::getInstance() {
+       static Logger instance;
+       return instance;
+    }
+
+    void Logger::logMessage(const std::string& message) {
+        logStream << message << std::endl;
+    }
+
+    size_t getCurrentMemoryUsageKB() {
+        PROCESS_MEMORY_COUNTERS pmc;
+        GetProcessMemoryInfo(GetCurrentProcess(), &pmc, sizeof(pmc));
+        return static_cast<size_t>(pmc.WorkingSetSize / 1024);  // WorkingSetSize is in bytes
+    }
 }
