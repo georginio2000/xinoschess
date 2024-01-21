@@ -19,7 +19,7 @@ public:
     /// @param a movenum
     /// @param b fullmovenum
     Game(string position = "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq -", int a = 0, int b = 0);
-    Game::Game(const Game& other);
+    Game(const Game& other);
     void draw() const;
     bool check_check(int);//agnoeitai to i-osto kommati kata ton elegxo
     int lastmovedoublepush() const;//to xw xrhsimopoihsei? hahah

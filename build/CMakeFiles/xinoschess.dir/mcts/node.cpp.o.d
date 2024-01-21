@@ -156,7 +156,11 @@ CMakeFiles/xinoschess.dir/mcts/node.cpp.o: \
  /usr/include/c++/9/array /usr/include/c++/9/bits/uses_allocator.h \
  /usr/include/c++/9/bits/invoke.h /usr/include/c++/9/limits \
  /usr/include/c++/9/bits/unordered_map.h \
- /usr/include/c++/9/bits/erase_if.h /usr/include/c++/9/cmath \
+ /usr/include/c++/9/bits/erase_if.h /usr/include/c++/9/fstream \
+ /usr/include/c++/9/bits/codecvt.h \
+ /usr/include/x86_64-linux-gnu/c++/9/bits/basic_file.h \
+ /usr/include/x86_64-linux-gnu/c++/9/bits/c++io.h \
+ /usr/include/c++/9/bits/fstream.tcc /usr/include/c++/9/cmath \
  /usr/include/math.h /usr/include/x86_64-linux-gnu/bits/math-vector.h \
  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
  /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
@@ -165,4 +169,16 @@ CMakeFiles/xinoschess.dir/mcts/node.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
- /usr/include/x86_64-linux-gnu/bits/iscanonical.h
+ /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+ /usr/include/c++/9/memory /usr/include/c++/9/bits/stl_tempbuf.h \
+ /usr/include/c++/9/bits/stl_raw_storage_iter.h \
+ /usr/include/c++/9/ext/concurrence.h \
+ /usr/include/c++/9/bits/unique_ptr.h \
+ /usr/include/c++/9/bits/shared_ptr.h \
+ /usr/include/c++/9/bits/shared_ptr_base.h \
+ /usr/include/c++/9/bits/allocated_ptr.h \
+ /usr/include/c++/9/bits/refwrap.h \
+ /usr/include/c++/9/bits/shared_ptr_atomic.h \
+ /usr/include/c++/9/bits/atomic_base.h \
+ /usr/include/c++/9/bits/atomic_lockfree_defines.h \
+ /usr/include/c++/9/backward/auto_ptr.h

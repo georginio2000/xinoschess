@@ -22,6 +22,7 @@ CMakeFiles/xinoschess.dir/chessv2/game.cpp.o: /home/gkous/Desktop/xinoschess/che
   /usr/include/c++/9/bits/basic_string.h \
   /usr/include/c++/9/bits/basic_string.tcc \
   /usr/include/c++/9/bits/char_traits.h \
+  /usr/include/c++/9/bits/codecvt.h \
   /usr/include/c++/9/bits/concept_check.h \
   /usr/include/c++/9/bits/cpp_type_traits.h \
   /usr/include/c++/9/bits/cxxabi_forced.h \
@@ -30,6 +31,7 @@ CMakeFiles/xinoschess.dir/chessv2/game.cpp.o: /home/gkous/Desktop/xinoschess/che
   /usr/include/c++/9/bits/exception.h \
   /usr/include/c++/9/bits/exception_defines.h \
   /usr/include/c++/9/bits/exception_ptr.h \
+  /usr/include/c++/9/bits/fstream.tcc \
   /usr/include/c++/9/bits/functexcept.h \
   /usr/include/c++/9/bits/functional_hash.h \
   /usr/include/c++/9/bits/hash_bytes.h \
@@ -94,6 +96,7 @@ CMakeFiles/xinoschess.dir/chessv2/game.cpp.o: /home/gkous/Desktop/xinoschess/che
   /usr/include/c++/9/ext/numeric_traits.h \
   /usr/include/c++/9/ext/string_conversions.h \
   /usr/include/c++/9/ext/type_traits.h \
+  /usr/include/c++/9/fstream \
   /usr/include/c++/9/initializer_list \
   /usr/include/c++/9/ios \
   /usr/include/c++/9/iosfwd \
@@ -197,8 +200,10 @@ CMakeFiles/xinoschess.dir/chessv2/game.cpp.o: /home/gkous/Desktop/xinoschess/che
   /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
   /usr/include/x86_64-linux-gnu/bits/wordsize.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/atomic_word.h \
+  /usr/include/x86_64-linux-gnu/c++/9/bits/basic_file.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/c++allocator.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
+  /usr/include/x86_64-linux-gnu/c++/9/bits/c++io.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/c++locale.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/cpu_defines.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/ctype_base.h \
@@ -234,6 +239,7 @@ CMakeFiles/xinoschess.dir/chessv2/move.cpp.o: /home/gkous/Desktop/xinoschess/che
   /usr/include/c++/9/bits/basic_string.h \
   /usr/include/c++/9/bits/basic_string.tcc \
   /usr/include/c++/9/bits/char_traits.h \
+  /usr/include/c++/9/bits/codecvt.h \
   /usr/include/c++/9/bits/concept_check.h \
   /usr/include/c++/9/bits/cpp_type_traits.h \
   /usr/include/c++/9/bits/cxxabi_forced.h \
@@ -242,6 +248,7 @@ CMakeFiles/xinoschess.dir/chessv2/move.cpp.o: /home/gkous/Desktop/xinoschess/che
   /usr/include/c++/9/bits/exception.h \
   /usr/include/c++/9/bits/exception_defines.h \
   /usr/include/c++/9/bits/exception_ptr.h \
+  /usr/include/c++/9/bits/fstream.tcc \
   /usr/include/c++/9/bits/functexcept.h \
   /usr/include/c++/9/bits/functional_hash.h \
   /usr/include/c++/9/bits/hash_bytes.h \
@@ -301,6 +308,7 @@ CMakeFiles/xinoschess.dir/chessv2/move.cpp.o: /home/gkous/Desktop/xinoschess/che
   /usr/include/c++/9/ext/numeric_traits.h \
   /usr/include/c++/9/ext/string_conversions.h \
   /usr/include/c++/9/ext/type_traits.h \
+  /usr/include/c++/9/fstream \
   /usr/include/c++/9/initializer_list \
   /usr/include/c++/9/ios \
   /usr/include/c++/9/iosfwd \
@@ -394,8 +402,10 @@ CMakeFiles/xinoschess.dir/chessv2/move.cpp.o: /home/gkous/Desktop/xinoschess/che
   /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
   /usr/include/x86_64-linux-gnu/bits/wordsize.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/atomic_word.h \
+  /usr/include/x86_64-linux-gnu/c++/9/bits/basic_file.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/c++allocator.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
+  /usr/include/x86_64-linux-gnu/c++/9/bits/c++io.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/c++locale.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/cpu_defines.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/ctype_base.h \
@@ -431,6 +441,7 @@ CMakeFiles/xinoschess.dir/chessv2/piece.cpp.o: /home/gkous/Desktop/xinoschess/ch
   /usr/include/c++/9/bits/basic_string.h \
   /usr/include/c++/9/bits/basic_string.tcc \
   /usr/include/c++/9/bits/char_traits.h \
+  /usr/include/c++/9/bits/codecvt.h \
   /usr/include/c++/9/bits/concept_check.h \
   /usr/include/c++/9/bits/cpp_type_traits.h \
   /usr/include/c++/9/bits/cxxabi_forced.h \
@@ -439,6 +450,7 @@ CMakeFiles/xinoschess.dir/chessv2/piece.cpp.o: /home/gkous/Desktop/xinoschess/ch
   /usr/include/c++/9/bits/exception.h \
   /usr/include/c++/9/bits/exception_defines.h \
   /usr/include/c++/9/bits/exception_ptr.h \
+  /usr/include/c++/9/bits/fstream.tcc \
   /usr/include/c++/9/bits/functexcept.h \
   /usr/include/c++/9/bits/functional_hash.h \
   /usr/include/c++/9/bits/hash_bytes.h \
@@ -498,6 +510,7 @@ CMakeFiles/xinoschess.dir/chessv2/piece.cpp.o: /home/gkous/Desktop/xinoschess/ch
   /usr/include/c++/9/ext/numeric_traits.h \
   /usr/include/c++/9/ext/string_conversions.h \
   /usr/include/c++/9/ext/type_traits.h \
+  /usr/include/c++/9/fstream \
   /usr/include/c++/9/initializer_list \
   /usr/include/c++/9/ios \
   /usr/include/c++/9/iosfwd \
@@ -591,8 +604,10 @@ CMakeFiles/xinoschess.dir/chessv2/piece.cpp.o: /home/gkous/Desktop/xinoschess/ch
   /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
   /usr/include/x86_64-linux-gnu/bits/wordsize.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/atomic_word.h \
+  /usr/include/x86_64-linux-gnu/c++/9/bits/basic_file.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/c++allocator.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
+  /usr/include/x86_64-linux-gnu/c++/9/bits/c++io.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/c++locale.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/cpu_defines.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/ctype_base.h \
@@ -629,6 +644,7 @@ CMakeFiles/xinoschess.dir/chessv2/utilities.cpp.o: /home/gkous/Desktop/xinosches
   /usr/include/c++/9/bits/basic_string.h \
   /usr/include/c++/9/bits/basic_string.tcc \
   /usr/include/c++/9/bits/char_traits.h \
+  /usr/include/c++/9/bits/codecvt.h \
   /usr/include/c++/9/bits/concept_check.h \
   /usr/include/c++/9/bits/cpp_type_traits.h \
   /usr/include/c++/9/bits/cxxabi_forced.h \
@@ -637,6 +653,7 @@ CMakeFiles/xinoschess.dir/chessv2/utilities.cpp.o: /home/gkous/Desktop/xinosches
   /usr/include/c++/9/bits/exception.h \
   /usr/include/c++/9/bits/exception_defines.h \
   /usr/include/c++/9/bits/exception_ptr.h \
+  /usr/include/c++/9/bits/fstream.tcc \
   /usr/include/c++/9/bits/functexcept.h \
   /usr/include/c++/9/bits/functional_hash.h \
   /usr/include/c++/9/bits/hash_bytes.h \
@@ -697,6 +714,7 @@ CMakeFiles/xinoschess.dir/chessv2/utilities.cpp.o: /home/gkous/Desktop/xinosches
   /usr/include/c++/9/ext/numeric_traits.h \
   /usr/include/c++/9/ext/string_conversions.h \
   /usr/include/c++/9/ext/type_traits.h \
+  /usr/include/c++/9/fstream \
   /usr/include/c++/9/initializer_list \
   /usr/include/c++/9/ios \
   /usr/include/c++/9/iosfwd \
@@ -800,8 +818,10 @@ CMakeFiles/xinoschess.dir/chessv2/utilities.cpp.o: /home/gkous/Desktop/xinosches
   /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
   /usr/include/x86_64-linux-gnu/bits/wordsize.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/atomic_word.h \
+  /usr/include/x86_64-linux-gnu/c++/9/bits/basic_file.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/c++allocator.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
+  /usr/include/x86_64-linux-gnu/c++/9/bits/c++io.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/c++locale.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/cpu_defines.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/ctype_base.h \
@@ -837,6 +857,7 @@ CMakeFiles/xinoschess.dir/cnn/cnn.cpp.o: /home/gkous/Desktop/xinoschess/cnn/cnn.
   /usr/include/c++/9/bits/basic_string.h \
   /usr/include/c++/9/bits/basic_string.tcc \
   /usr/include/c++/9/bits/char_traits.h \
+  /usr/include/c++/9/bits/codecvt.h \
   /usr/include/c++/9/bits/concept_check.h \
   /usr/include/c++/9/bits/cpp_type_traits.h \
   /usr/include/c++/9/bits/cxxabi_forced.h \
@@ -845,6 +866,7 @@ CMakeFiles/xinoschess.dir/cnn/cnn.cpp.o: /home/gkous/Desktop/xinoschess/cnn/cnn.
   /usr/include/c++/9/bits/exception.h \
   /usr/include/c++/9/bits/exception_defines.h \
   /usr/include/c++/9/bits/exception_ptr.h \
+  /usr/include/c++/9/bits/fstream.tcc \
   /usr/include/c++/9/bits/functexcept.h \
   /usr/include/c++/9/bits/functional_hash.h \
   /usr/include/c++/9/bits/hash_bytes.h \
@@ -905,6 +927,7 @@ CMakeFiles/xinoschess.dir/cnn/cnn.cpp.o: /home/gkous/Desktop/xinoschess/cnn/cnn.
   /usr/include/c++/9/ext/numeric_traits.h \
   /usr/include/c++/9/ext/string_conversions.h \
   /usr/include/c++/9/ext/type_traits.h \
+  /usr/include/c++/9/fstream \
   /usr/include/c++/9/initializer_list \
   /usr/include/c++/9/ios \
   /usr/include/c++/9/iosfwd \
@@ -1008,8 +1031,10 @@ CMakeFiles/xinoschess.dir/cnn/cnn.cpp.o: /home/gkous/Desktop/xinoschess/cnn/cnn.
   /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
   /usr/include/x86_64-linux-gnu/bits/wordsize.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/atomic_word.h \
+  /usr/include/x86_64-linux-gnu/c++/9/bits/basic_file.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/c++allocator.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
+  /usr/include/x86_64-linux-gnu/c++/9/bits/c++io.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/c++locale.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/cpu_defines.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/ctype_base.h \
@@ -1413,14 +1438,19 @@ CMakeFiles/xinoschess.dir/main.cpp.o: /home/gkous/Desktop/xinoschess/main.cpp \
   /usr/include/asm-generic/errno.h \
   /usr/include/assert.h \
   /usr/include/c++/9/array \
+  /usr/include/c++/9/backward/auto_ptr.h \
   /usr/include/c++/9/backward/binders.h \
   /usr/include/c++/9/bits/alloc_traits.h \
+  /usr/include/c++/9/bits/allocated_ptr.h \
   /usr/include/c++/9/bits/allocator.h \
+  /usr/include/c++/9/bits/atomic_base.h \
+  /usr/include/c++/9/bits/atomic_lockfree_defines.h \
   /usr/include/c++/9/bits/basic_ios.h \
   /usr/include/c++/9/bits/basic_ios.tcc \
   /usr/include/c++/9/bits/basic_string.h \
   /usr/include/c++/9/bits/basic_string.tcc \
   /usr/include/c++/9/bits/char_traits.h \
+  /usr/include/c++/9/bits/codecvt.h \
   /usr/include/c++/9/bits/concept_check.h \
   /usr/include/c++/9/bits/cpp_type_traits.h \
   /usr/include/c++/9/bits/cxxabi_forced.h \
@@ -1429,6 +1459,7 @@ CMakeFiles/xinoschess.dir/main.cpp.o: /home/gkous/Desktop/xinoschess/main.cpp \
   /usr/include/c++/9/bits/exception.h \
   /usr/include/c++/9/bits/exception_defines.h \
   /usr/include/c++/9/bits/exception_ptr.h \
+  /usr/include/c++/9/bits/fstream.tcc \
   /usr/include/c++/9/bits/functexcept.h \
   /usr/include/c++/9/bits/functional_hash.h \
   /usr/include/c++/9/bits/hash_bytes.h \
@@ -1451,6 +1482,10 @@ CMakeFiles/xinoschess.dir/main.cpp.o: /home/gkous/Desktop/xinoschess/main.cpp \
   /usr/include/c++/9/bits/predefined_ops.h \
   /usr/include/c++/9/bits/ptr_traits.h \
   /usr/include/c++/9/bits/range_access.h \
+  /usr/include/c++/9/bits/refwrap.h \
+  /usr/include/c++/9/bits/shared_ptr.h \
+  /usr/include/c++/9/bits/shared_ptr_atomic.h \
+  /usr/include/c++/9/bits/shared_ptr_base.h \
   /usr/include/c++/9/bits/std_abs.h \
   /usr/include/c++/9/bits/stl_algobase.h \
   /usr/include/c++/9/bits/stl_bvector.h \
@@ -1460,12 +1495,15 @@ CMakeFiles/xinoschess.dir/main.cpp.o: /home/gkous/Desktop/xinoschess/main.cpp \
   /usr/include/c++/9/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/9/bits/stl_iterator_base_types.h \
   /usr/include/c++/9/bits/stl_pair.h \
+  /usr/include/c++/9/bits/stl_raw_storage_iter.h \
   /usr/include/c++/9/bits/stl_relops.h \
+  /usr/include/c++/9/bits/stl_tempbuf.h \
   /usr/include/c++/9/bits/stl_uninitialized.h \
   /usr/include/c++/9/bits/stl_vector.h \
   /usr/include/c++/9/bits/streambuf.tcc \
   /usr/include/c++/9/bits/streambuf_iterator.h \
   /usr/include/c++/9/bits/stringfwd.h \
+  /usr/include/c++/9/bits/unique_ptr.h \
   /usr/include/c++/9/bits/unordered_map.h \
   /usr/include/c++/9/bits/uses_allocator.h \
   /usr/include/c++/9/bits/vector.tcc \
@@ -1485,16 +1523,19 @@ CMakeFiles/xinoschess.dir/main.cpp.o: /home/gkous/Desktop/xinoschess/main.cpp \
   /usr/include/c++/9/ext/aligned_buffer.h \
   /usr/include/c++/9/ext/alloc_traits.h \
   /usr/include/c++/9/ext/atomicity.h \
+  /usr/include/c++/9/ext/concurrence.h \
   /usr/include/c++/9/ext/new_allocator.h \
   /usr/include/c++/9/ext/numeric_traits.h \
   /usr/include/c++/9/ext/string_conversions.h \
   /usr/include/c++/9/ext/type_traits.h \
+  /usr/include/c++/9/fstream \
   /usr/include/c++/9/initializer_list \
   /usr/include/c++/9/ios \
   /usr/include/c++/9/iosfwd \
   /usr/include/c++/9/iostream \
   /usr/include/c++/9/istream \
   /usr/include/c++/9/limits \
+  /usr/include/c++/9/memory \
   /usr/include/c++/9/new \
   /usr/include/c++/9/ostream \
   /usr/include/c++/9/stdexcept \
@@ -1592,8 +1633,10 @@ CMakeFiles/xinoschess.dir/main.cpp.o: /home/gkous/Desktop/xinoschess/main.cpp \
   /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
   /usr/include/x86_64-linux-gnu/bits/wordsize.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/atomic_word.h \
+  /usr/include/x86_64-linux-gnu/c++/9/bits/basic_file.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/c++allocator.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
+  /usr/include/x86_64-linux-gnu/c++/9/bits/c++io.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/c++locale.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/cpu_defines.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/ctype_base.h \
@@ -1624,14 +1667,19 @@ CMakeFiles/xinoschess.dir/mcts/mcts.cpp.o: /home/gkous/Desktop/xinoschess/mcts/m
   /usr/include/asm-generic/errno.h \
   /usr/include/assert.h \
   /usr/include/c++/9/array \
+  /usr/include/c++/9/backward/auto_ptr.h \
   /usr/include/c++/9/backward/binders.h \
   /usr/include/c++/9/bits/alloc_traits.h \
+  /usr/include/c++/9/bits/allocated_ptr.h \
   /usr/include/c++/9/bits/allocator.h \
+  /usr/include/c++/9/bits/atomic_base.h \
+  /usr/include/c++/9/bits/atomic_lockfree_defines.h \
   /usr/include/c++/9/bits/basic_ios.h \
   /usr/include/c++/9/bits/basic_ios.tcc \
   /usr/include/c++/9/bits/basic_string.h \
   /usr/include/c++/9/bits/basic_string.tcc \
   /usr/include/c++/9/bits/char_traits.h \
+  /usr/include/c++/9/bits/codecvt.h \
   /usr/include/c++/9/bits/concept_check.h \
   /usr/include/c++/9/bits/cpp_type_traits.h \
   /usr/include/c++/9/bits/cxxabi_forced.h \
@@ -1640,6 +1688,7 @@ CMakeFiles/xinoschess.dir/mcts/mcts.cpp.o: /home/gkous/Desktop/xinoschess/mcts/m
   /usr/include/c++/9/bits/exception.h \
   /usr/include/c++/9/bits/exception_defines.h \
   /usr/include/c++/9/bits/exception_ptr.h \
+  /usr/include/c++/9/bits/fstream.tcc \
   /usr/include/c++/9/bits/functexcept.h \
   /usr/include/c++/9/bits/functional_hash.h \
   /usr/include/c++/9/bits/hash_bytes.h \
@@ -1662,6 +1711,10 @@ CMakeFiles/xinoschess.dir/mcts/mcts.cpp.o: /home/gkous/Desktop/xinoschess/mcts/m
   /usr/include/c++/9/bits/predefined_ops.h \
   /usr/include/c++/9/bits/ptr_traits.h \
   /usr/include/c++/9/bits/range_access.h \
+  /usr/include/c++/9/bits/refwrap.h \
+  /usr/include/c++/9/bits/shared_ptr.h \
+  /usr/include/c++/9/bits/shared_ptr_atomic.h \
+  /usr/include/c++/9/bits/shared_ptr_base.h \
   /usr/include/c++/9/bits/std_abs.h \
   /usr/include/c++/9/bits/stl_algobase.h \
   /usr/include/c++/9/bits/stl_bvector.h \
@@ -1671,12 +1724,15 @@ CMakeFiles/xinoschess.dir/mcts/mcts.cpp.o: /home/gkous/Desktop/xinoschess/mcts/m
   /usr/include/c++/9/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/9/bits/stl_iterator_base_types.h \
   /usr/include/c++/9/bits/stl_pair.h \
+  /usr/include/c++/9/bits/stl_raw_storage_iter.h \
   /usr/include/c++/9/bits/stl_relops.h \
+  /usr/include/c++/9/bits/stl_tempbuf.h \
   /usr/include/c++/9/bits/stl_uninitialized.h \
   /usr/include/c++/9/bits/stl_vector.h \
   /usr/include/c++/9/bits/streambuf.tcc \
   /usr/include/c++/9/bits/streambuf_iterator.h \
   /usr/include/c++/9/bits/stringfwd.h \
+  /usr/include/c++/9/bits/unique_ptr.h \
   /usr/include/c++/9/bits/unordered_map.h \
   /usr/include/c++/9/bits/uses_allocator.h \
   /usr/include/c++/9/bits/vector.tcc \
@@ -1696,16 +1752,19 @@ CMakeFiles/xinoschess.dir/mcts/mcts.cpp.o: /home/gkous/Desktop/xinoschess/mcts/m
   /usr/include/c++/9/ext/aligned_buffer.h \
   /usr/include/c++/9/ext/alloc_traits.h \
   /usr/include/c++/9/ext/atomicity.h \
+  /usr/include/c++/9/ext/concurrence.h \
   /usr/include/c++/9/ext/new_allocator.h \
   /usr/include/c++/9/ext/numeric_traits.h \
   /usr/include/c++/9/ext/string_conversions.h \
   /usr/include/c++/9/ext/type_traits.h \
+  /usr/include/c++/9/fstream \
   /usr/include/c++/9/initializer_list \
   /usr/include/c++/9/ios \
   /usr/include/c++/9/iosfwd \
   /usr/include/c++/9/iostream \
   /usr/include/c++/9/istream \
   /usr/include/c++/9/limits \
+  /usr/include/c++/9/memory \
   /usr/include/c++/9/new \
   /usr/include/c++/9/ostream \
   /usr/include/c++/9/stdexcept \
@@ -1803,8 +1862,10 @@ CMakeFiles/xinoschess.dir/mcts/mcts.cpp.o: /home/gkous/Desktop/xinoschess/mcts/m
   /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
   /usr/include/x86_64-linux-gnu/bits/wordsize.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/atomic_word.h \
+  /usr/include/x86_64-linux-gnu/c++/9/bits/basic_file.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/c++allocator.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
+  /usr/include/x86_64-linux-gnu/c++/9/bits/c++io.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/c++locale.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/cpu_defines.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/ctype_base.h \
@@ -1834,14 +1895,19 @@ CMakeFiles/xinoschess.dir/mcts/node.cpp.o: /home/gkous/Desktop/xinoschess/mcts/n
   /usr/include/asm-generic/errno.h \
   /usr/include/assert.h \
   /usr/include/c++/9/array \
+  /usr/include/c++/9/backward/auto_ptr.h \
   /usr/include/c++/9/backward/binders.h \
   /usr/include/c++/9/bits/alloc_traits.h \
+  /usr/include/c++/9/bits/allocated_ptr.h \
   /usr/include/c++/9/bits/allocator.h \
+  /usr/include/c++/9/bits/atomic_base.h \
+  /usr/include/c++/9/bits/atomic_lockfree_defines.h \
   /usr/include/c++/9/bits/basic_ios.h \
   /usr/include/c++/9/bits/basic_ios.tcc \
   /usr/include/c++/9/bits/basic_string.h \
   /usr/include/c++/9/bits/basic_string.tcc \
   /usr/include/c++/9/bits/char_traits.h \
+  /usr/include/c++/9/bits/codecvt.h \
   /usr/include/c++/9/bits/concept_check.h \
   /usr/include/c++/9/bits/cpp_type_traits.h \
   /usr/include/c++/9/bits/cxxabi_forced.h \
@@ -1850,6 +1916,7 @@ CMakeFiles/xinoschess.dir/mcts/node.cpp.o: /home/gkous/Desktop/xinoschess/mcts/n
   /usr/include/c++/9/bits/exception.h \
   /usr/include/c++/9/bits/exception_defines.h \
   /usr/include/c++/9/bits/exception_ptr.h \
+  /usr/include/c++/9/bits/fstream.tcc \
   /usr/include/c++/9/bits/functexcept.h \
   /usr/include/c++/9/bits/functional_hash.h \
   /usr/include/c++/9/bits/hash_bytes.h \
@@ -1872,6 +1939,10 @@ CMakeFiles/xinoschess.dir/mcts/node.cpp.o: /home/gkous/Desktop/xinoschess/mcts/n
   /usr/include/c++/9/bits/predefined_ops.h \
   /usr/include/c++/9/bits/ptr_traits.h \
   /usr/include/c++/9/bits/range_access.h \
+  /usr/include/c++/9/bits/refwrap.h \
+  /usr/include/c++/9/bits/shared_ptr.h \
+  /usr/include/c++/9/bits/shared_ptr_atomic.h \
+  /usr/include/c++/9/bits/shared_ptr_base.h \
   /usr/include/c++/9/bits/std_abs.h \
   /usr/include/c++/9/bits/stl_algobase.h \
   /usr/include/c++/9/bits/stl_bvector.h \
@@ -1881,12 +1952,15 @@ CMakeFiles/xinoschess.dir/mcts/node.cpp.o: /home/gkous/Desktop/xinoschess/mcts/n
   /usr/include/c++/9/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/9/bits/stl_iterator_base_types.h \
   /usr/include/c++/9/bits/stl_pair.h \
+  /usr/include/c++/9/bits/stl_raw_storage_iter.h \
   /usr/include/c++/9/bits/stl_relops.h \
+  /usr/include/c++/9/bits/stl_tempbuf.h \
   /usr/include/c++/9/bits/stl_uninitialized.h \
   /usr/include/c++/9/bits/stl_vector.h \
   /usr/include/c++/9/bits/streambuf.tcc \
   /usr/include/c++/9/bits/streambuf_iterator.h \
   /usr/include/c++/9/bits/stringfwd.h \
+  /usr/include/c++/9/bits/unique_ptr.h \
   /usr/include/c++/9/bits/unordered_map.h \
   /usr/include/c++/9/bits/uses_allocator.h \
   /usr/include/c++/9/bits/vector.tcc \
@@ -1906,16 +1980,19 @@ CMakeFiles/xinoschess.dir/mcts/node.cpp.o: /home/gkous/Desktop/xinoschess/mcts/n
   /usr/include/c++/9/ext/aligned_buffer.h \
   /usr/include/c++/9/ext/alloc_traits.h \
   /usr/include/c++/9/ext/atomicity.h \
+  /usr/include/c++/9/ext/concurrence.h \
   /usr/include/c++/9/ext/new_allocator.h \
   /usr/include/c++/9/ext/numeric_traits.h \
   /usr/include/c++/9/ext/string_conversions.h \
   /usr/include/c++/9/ext/type_traits.h \
+  /usr/include/c++/9/fstream \
   /usr/include/c++/9/initializer_list \
   /usr/include/c++/9/ios \
   /usr/include/c++/9/iosfwd \
   /usr/include/c++/9/iostream \
   /usr/include/c++/9/istream \
   /usr/include/c++/9/limits \
+  /usr/include/c++/9/memory \
   /usr/include/c++/9/new \
   /usr/include/c++/9/ostream \
   /usr/include/c++/9/stdexcept \
@@ -2013,8 +2090,10 @@ CMakeFiles/xinoschess.dir/mcts/node.cpp.o: /home/gkous/Desktop/xinoschess/mcts/n
   /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
   /usr/include/x86_64-linux-gnu/bits/wordsize.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/atomic_word.h \
+  /usr/include/x86_64-linux-gnu/c++/9/bits/basic_file.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/c++allocator.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
+  /usr/include/x86_64-linux-gnu/c++/9/bits/c++io.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/c++locale.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/cpu_defines.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/ctype_base.h \
@@ -2036,6 +2115,18 @@ CMakeFiles/xinoschess.dir/mcts/node.cpp.o: /home/gkous/Desktop/xinoschess/mcts/n
 /home/gkous/Desktop/xinoschess/mcts/node.cpp:
 
 /home/gkous/Desktop/xinoschess/mcts/mcts.cpp:
+
+/usr/include/c++/9/memory:
+
+/usr/include/c++/9/ext/concurrence.h:
+
+/usr/include/c++/9/bits/shared_ptr_base.h:
+
+/usr/include/c++/9/bits/shared_ptr.h:
+
+/usr/include/c++/9/bits/refwrap.h:
+
+/usr/include/c++/9/bits/atomic_base.h:
 
 /home/gkous/Desktop/xinoschess/mcts/node.h:
 
@@ -2068,6 +2159,8 @@ CMakeFiles/xinoschess.dir/mcts/node.cpp.o: /home/gkous/Desktop/xinoschess/mcts/n
 /usr/include/x86_64-linux-gnu/c++/9/bits/ctype_base.h:
 
 /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h:
+
+/usr/include/x86_64-linux-gnu/c++/9/bits/basic_file.h:
 
 /usr/include/x86_64-linux-gnu/c++/9/bits/atomic_word.h:
 
@@ -2115,7 +2208,13 @@ CMakeFiles/xinoschess.dir/mcts/node.cpp.o: /home/gkous/Desktop/xinoschess/mcts/n
 
 /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
 
+/usr/include/c++/9/backward/auto_ptr.h:
+
 /usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
+
+/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
+
+/usr/include/x86_64-linux-gnu/bits/types.h:
 
 /usr/include/c++/9/bits/vector.tcc:
 
@@ -2133,6 +2232,8 @@ CMakeFiles/xinoschess.dir/mcts/node.cpp.o: /home/gkous/Desktop/xinoschess/mcts/n
 
 /usr/include/c++/9/bits/stl_vector.h:
 
+/usr/include/c++/9/bits/stl_raw_storage_iter.h:
+
 /usr/include/x86_64-linux-gnu/sys/select.h:
 
 /usr/include/c++/9/bits/stl_uninitialized.h:
@@ -2142,8 +2243,6 @@ CMakeFiles/xinoschess.dir/mcts/node.cpp.o: /home/gkous/Desktop/xinoschess/mcts/n
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
 
 /usr/include/c++/9/cerrno:
-
-/usr/include/c++/9/string:
 
 /usr/include/c++/9/cmath:
 
@@ -2157,11 +2256,19 @@ CMakeFiles/xinoschess.dir/mcts/node.cpp.o: /home/gkous/Desktop/xinoschess/mcts/n
 
 /usr/include/c++/9/bits/stl_relops.h:
 
+/usr/include/c++/9/bits/shared_ptr_atomic.h:
+
 /usr/include/wctype.h:
+
+/usr/include/c++/9/bits/allocated_ptr.h:
 
 /usr/include/c++/9/bits/predefined_ops.h:
 
+/usr/include/c++/9/bits/codecvt.h:
+
 /usr/include/x86_64-linux-gnu/bits/cpu-set.h:
+
+/usr/include/c++/9/string:
 
 /usr/include/x86_64-linux-gnu/c++/9/bits/ctype_inline.h:
 
@@ -2182,6 +2289,10 @@ CMakeFiles/xinoschess.dir/mcts/node.cpp.o: /home/gkous/Desktop/xinoschess/mcts/n
 /usr/include/c++/9/bits/istream.tcc:
 
 /usr/include/wchar.h:
+
+/usr/include/c++/9/bits/ios_base.h:
+
+/usr/include/c++/9/bits/invoke.h:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs.h:
 
@@ -2227,6 +2338,10 @@ CMakeFiles/xinoschess.dir/mcts/node.cpp.o: /home/gkous/Desktop/xinoschess/mcts/n
 
 /usr/include/c++/9/utility:
 
+/usr/include/x86_64-linux-gnu/bits/timex.h:
+
+/usr/include/c++/9/bits/alloc_traits.h:
+
 /home/gkous/Desktop/xinoschess/cnn/cnn.cpp:
 
 /usr/include/sched.h:
@@ -2238,10 +2353,6 @@ CMakeFiles/xinoschess.dir/mcts/node.cpp.o: /home/gkous/Desktop/xinoschess/mcts/n
 /home/gkous/Desktop/xinoschess/chessv2/game.cpp:
 
 /usr/include/c++/9/ostream:
-
-/usr/include/c++/9/bits/alloc_traits.h:
-
-/usr/include/x86_64-linux-gnu/bits/timex.h:
 
 /usr/include/x86_64-linux-gnu/bits/typesizes.h:
 
@@ -2271,6 +2382,8 @@ CMakeFiles/xinoschess.dir/mcts/node.cpp.o: /home/gkous/Desktop/xinoschess/mcts/n
 
 /usr/include/c++/9/array:
 
+/usr/include/c++/9/bits/fstream.tcc:
+
 /usr/include/time.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/FILE.h:
@@ -2291,15 +2404,9 @@ CMakeFiles/xinoschess.dir/mcts/node.cpp.o: /home/gkous/Desktop/xinoschess/mcts/n
 
 /usr/include/c++/9/ext/alloc_traits.h:
 
-/usr/include/c++/9/cstdint:
-
 /usr/include/c++/9/clocale:
 
 /usr/include/asm-generic/errno.h:
-
-/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
-
-/usr/include/x86_64-linux-gnu/bits/types.h:
 
 /usr/include/c++/9/bits/hash_bytes.h:
 
@@ -2323,21 +2430,21 @@ CMakeFiles/xinoschess.dir/mcts/node.cpp.o: /home/gkous/Desktop/xinoschess/mcts/n
 
 /usr/include/c++/9/bits/cxxabi_forced.h:
 
-/usr/include/c++/9/bits/ios_base.h:
-
 /usr/include/c++/9/bits/functexcept.h:
 
 /usr/include/c++/9/bits/exception_defines.h:
-
-/usr/include/c++/9/bits/invoke.h:
 
 /usr/include/c++/9/bits/ptr_traits.h:
 
 /home/gkous/Desktop/xinoschess/chessv2/utilities.h:
 
+/usr/include/c++/9/fstream:
+
 /usr/include/c++/9/bits/exception_ptr.h:
 
 /usr/include/c++/9/bits/hashtable.h:
+
+/usr/include/c++/9/cstdint:
 
 /usr/include/c++/9/ctime:
 
@@ -2389,17 +2496,25 @@ CMakeFiles/xinoschess.dir/mcts/node.cpp.o: /home/gkous/Desktop/xinoschess/mcts/n
 
 /usr/include/c++/9/limits:
 
+/usr/include/c++/9/bits/atomic_lockfree_defines.h:
+
 /usr/include/c++/9/new:
 
 /usr/include/x86_64-linux-gnu/bits/timesize.h:
 
 /usr/include/c++/9/system_error:
 
+/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
+
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:
+
 /home/gkous/Desktop/xinoschess/chessv2/piece.h:
 
 /usr/include/c++/9/tuple:
 
 /usr/include/c++/9/type_traits:
+
+/usr/include/c++/9/bits/unique_ptr.h:
 
 /usr/include/c++/9/typeinfo:
 
@@ -2432,6 +2547,8 @@ CMakeFiles/xinoschess.dir/mcts/node.cpp.o: /home/gkous/Desktop/xinoschess/mcts/n
 /usr/include/x86_64-linux-gnu/bits/endianness.h:
 
 /usr/include/x86_64-linux-gnu/c++/9/bits/gthr-default.h:
+
+/usr/include/x86_64-linux-gnu/c++/9/bits/c++io.h:
 
 /usr/include/c++/9/bits/uses_allocator.h:
 
@@ -2472,10 +2589,6 @@ CMakeFiles/xinoschess.dir/mcts/node.cpp.o: /home/gkous/Desktop/xinoschess/mcts/n
 /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
 
 /usr/include/x86_64-linux-gnu/bits/select.h:
-
-/usr/include/x86_64-linux-gnu/bits/mathcalls.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
 
 /usr/include/x86_64-linux-gnu/bits/long-double.h:
 

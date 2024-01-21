@@ -152,4 +152,8 @@ CMakeFiles/xinoschess.dir/chessv2/piece.cpp.o: \
  /usr/include/c++/9/array /usr/include/c++/9/bits/uses_allocator.h \
  /usr/include/c++/9/bits/invoke.h /usr/include/c++/9/limits \
  /usr/include/c++/9/bits/unordered_map.h \
- /usr/include/c++/9/bits/erase_if.h
+ /usr/include/c++/9/bits/erase_if.h /usr/include/c++/9/fstream \
+ /usr/include/c++/9/bits/codecvt.h \
+ /usr/include/x86_64-linux-gnu/c++/9/bits/basic_file.h \
+ /usr/include/x86_64-linux-gnu/c++/9/bits/c++io.h \
+ /usr/include/c++/9/bits/fstream.tcc

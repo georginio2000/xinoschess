@@ -81,10 +81,11 @@ namespace util {
     void Logger::logMessage(const std::string& message) {
         logStream << message << std::endl;
     }
-
+    /*
     size_t getCurrentMemoryUsageKB() {
         PROCESS_MEMORY_COUNTERS pmc;
         GetProcessMemoryInfo(GetCurrentProcess(), &pmc, sizeof(pmc));
         return static_cast<size_t>(pmc.WorkingSetSize / 1024);  // WorkingSetSize is in bytes
     }
+    */
 }

@@ -4,8 +4,6 @@
 #include<vector>
 #include<unordered_map>
 #include<assert.h>
-#include<windows.h>
-#include <psapi.h>
 #include<fstream>
 
 namespace util {
@@ -40,5 +38,5 @@ namespace util {
         std::ofstream logStream;
     };
 
-    size_t getCurrentMemoryUsageKB();
+    //size_t getCurrentMemoryUsageKB();
 }
