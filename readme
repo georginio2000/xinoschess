@@ -2,7 +2,8 @@
 
 
 
-chessv2: simulates a chess game
+# chessv2: simulates a chess game
+
 	FIXED -throws error in some edge cases(pawns reaching the edge and not promoting) FIXED
 	DONE-fix edge cases DONE
 	DONE-redifine class for const correctness and memory management DONE
