@@ -1,4 +1,6 @@
-README
+# XINOSCHESS
+
+
 
 chessv2: simulates a chess game
 	FIXED -throws error in some edge cases(pawns reaching the edge and not promoting) FIXED
