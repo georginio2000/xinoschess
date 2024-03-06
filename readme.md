@@ -1,21 +1,24 @@
-# XINOSCHESS
+# XINOSCHESS (UNDER CONSTRUCTION)
 
+Zero knowledge, neural network based, chess engine being built from scratch.
 
+## chessv2
 
-## chessv2: simulates a chess game
+Simulatss a chess game, used for the chess logic.
 
-	FIXED -throws error in some edge cases(pawns reaching the edge and not promoting) FIXED
-	DONE-fix edge cases DONE
-	DONE-redifine class for const correctness and memory management DONE
-	-fix errors in memory deallocation
+	-fix edge cases
 
-## cnn(convolutional neural network): currently the neural network is able to take board as input and output an evalutaion based on random weights
-	-fix backpropagation
-	-implement policy head
+## cnn(Convolutional Neural Network):
 
-## mcts(monte carlo tree search): basic structure is defined but does not work correct during tests(need to fix chess v2 edge cases first)
-	DONE-fix backpropagation DONE
-	-make functions to toggle between choosing move randomly and based on the evaluation network 
+Flexible cnn library ready to implement any desired network structure. 
+
+	-complete backpropagation
+
+## mcts(Monte Carlo Tree Search): 
+
+The required logic for expanding the search tree in the best looking way (choosing the right moves to look in depth into).
+
+	-fix memory deallocation problems
 
 	
 
