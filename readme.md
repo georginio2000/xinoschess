@@ -15,10 +15,10 @@ Flexible cnn library ready to implement any desired network structure.
 
 The required logic for expanding the search tree in the best looking way (choosing the right moves to look in depth into).
 
-
-TODO-chessv2:fix edge cases 
-TODO-cnn:compvete backpropagation
-TODO-mcts:fix memory deallocation problems
+	
+	TODO-chessv2:fix edge cases 
+	TODO-cnn:complete backpropagation
+	TODO-mcts:fix memory deallocation problems
 
 	
 
