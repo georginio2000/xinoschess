@@ -1,7 +1,7 @@
 # XINOSCHESS (UNDER CONSTRUCTION)
 
 Zero knowledge, neural network based, chess engine being built from scratch.
-Current status: compile run and play a chess game against yourself(check https://github.com/ikonomoug/XINOSCHESS for playing with an opponent).
+Current status: compile run and play a chess game against yourself (check https://github.com/ikonomoug/XINOSCHESS for playing with an opponent).
 
 ## chessv2
 
